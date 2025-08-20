@@ -89,7 +89,6 @@ window.addEventListener("scroll", function () {
   hero.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
 });
 
-
 // Whatsapp Script
 
 document
@@ -107,3 +106,38 @@ document
     )}`;
     window.open(whatsappUrl, "_blank");
   });
+
+// Initialize Slick Slider
+$(".gallery-slider").slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  dots: true,
+  arrows: true,
+  prevArrow:
+    '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
+  nextArrow:
+    '<button type="button" class="slick-next"><i class="bi bi-chevron-right"></i></button>',
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
+// Initialize FancyBox
+$('[data-fancybox="gallery"]').fancybox({
+  buttons: ["slideShow", "thumbs", "zoom", "fullScreen", "close"],
+  loop: true,
+  protect: true,
+});
