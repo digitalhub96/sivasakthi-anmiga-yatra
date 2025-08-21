@@ -116,9 +116,9 @@ $(".gallery-slider").slick({
   dots: true,
   arrows: true,
   prevArrow:
-    '<button type="button" class="slick-prev"><i class="bi bi-chevron-left"></i></button>',
+    '<button type="button" class="slick-prev"></button>',
   nextArrow:
-    '<button type="button" class="slick-next"><i class="bi bi-chevron-right"></i></button>',
+    '<button type="button" class="slick-next"></button>',
   responsive: [
     {
       breakpoint: 992,
