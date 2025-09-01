@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivasakthi Aanmeega Yatra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/say.png" class="img-fluid logo-say" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="breadcrumb-section">
+        <div class="container">
+            <h1 class="breadcrumb-title">Register</h1>
+            <nav class="breadcrumb-nav">
+                <a href="#">Home</a>
+                <span class="separator">›</span>
+                <span class="active">Register</span>
+            </nav>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-wrap">
+    <div class="contact-container">
+        <div class="contact-inner">
+            <!-- Contact Details Section -->
+            <div class="contact-details order-2 order-lg-1">
+                <h2 class="contact-title">Contact <span class="highlight-orange">Siva Sakthi</span></h2>
+                <p class="contact-sub mt-3">We’re here to help — call, mail, or visit us. Quick responses. Clear guidance.</p>
+
+                <div class="badges">
+                    <span class="badge"><i class="bi bi-shield-check"></i> Trusted Service</span>
+                    <span class="badge"><i class="bi bi-lightning-charge"></i> Fast Support</span>
+                    <span class="badge"><i class="bi bi-phone"></i> 24/7 WhatsApp</span>
+                </div>
+
+                <div class="cards-grid">
+                    <!-- Call Card -->
+                    <div class="contact-card">
+                        <div class="card-head">
+                            <div class="icon-pill"><i class="bi bi-telephone-fill"></i></div>
+                            <h3 class="card-title">Call</h3>
+                        </div>
+                        <p class="card-desc">Reach us anytime for quick queries & bookings.</p>
+                        <div class="card-link"><a href="tel:+919442511961">+91 94425 11961</a></div>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="contact-card">
+                        <div class="card-head">
+                            <div class="icon-pill"><i class="bi bi-envelope-fill"></i></div>
+                            <h3 class="card-title">Email</h3>
+                        </div>
+                        <p class="card-desc">Send your requirements or RFQs. We’ll reply fast.</p>
+                        <div class="card-link"><a href="mailto:sivasakthiaanmeegayatra2024@gmail.com">sivasakthiaanmeegayatra2024@gmail.com</a></div>
+                    </div>
+
+                    <!-- Address Card -->
+                    <div class="contact-card">
+                        <div class="card-head">
+                            <div class="icon-pill"><i class="bi bi-geo-alt-fill"></i></div>
+                            <h3 class="card-title">Address</h3>
+                        </div>
+                        <p class="card-desc">Shop no 7, Ajees complex, Pazhaiyar road, Puthur Sirkali (tk), Mayiladuthurai (dt), 609108.</p>
+                        <div class="card-link">Open: Mon–Sat, 9:30 AM – 7:00 PM</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="form-card order-1 order-lg-2">
+                <h2 class="contact-title">Register</h2>
+                <p class="contact-sub">Fill the form — it will open WhatsApp with your details prefilled.</p>
+
+                <form id="whatsapp-form" class="#" autocomplete="on" novalidate>
+                    <div class="field">
+                        <label class="label" for="user-name">Name</label>
+                        <input class="input" id="user-name" name="name" type="text" placeholder="Your name" required>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="phone">Phone Number</label>
+                        <input class="input" id="phone" name="phone" type="tel" placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="area">Area</label>
+                        <input class="input" id="area" name="area" type="text" placeholder="City/Town">
+                    </div>
+
+                    <!-- <div class="field">
+                        <label class="label" for="service">Our Services</label>
+                        <select class="select" id="service" name="service" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option>Blessings for Parenthood</option>
+                            <option>Marriage Obstacle Removal</option>
+                            <option>Business Success</option>
+                        </select>
+                    </div> -->
+
+                    <div class="form-actions full pt-3">
+                        <button type="submit" class="btn-primary"><i class="bi bi-whatsapp"></i> Register</button>
+                        <button type="reset" class="btn-outline"><i class="bi bi-arrow-counterclockwise"></i> Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script>
+    // WhatsApp number (country code + number, no plus sign)
+    const WHATSAPP_NUMBER = "919442511961";
+
+    const form = document.getElementById('whatsapp-form');
+
+    function validatePhone(phone) {
+    // Validates Indian phone numbers (e.g., 9876543210)
+    return /^[6-9][0-9]{9}$/.test(phone.replace(/\s/g, ''));
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = document.getElementById('user-name').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const area = document.getElementById('area').value.trim();
+
+        // Validate required fields
+        if (!name || !phone) {
+            alert("Please fill in both Name and Phone Number fields.");
+            return;
+        }
+
+        // Validate phone format
+        if (!validatePhone(phone)) {
+            alert("Please enter a valid Indian phone number (e.g., +919876543210).");
+            return;
+        }
+
+        // Build WhatsApp message
+        const lines = [
+            "🧾 *New Enquiry — Website*",
+            `*Name:* ${name}`,
+            `*Phone:* ${phone}`,
+            area ? `*Area:* ${area}` : null
+        ].filter(Boolean);
+
+        const text = encodeURIComponent(lines.join("\n"));
+        const waURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+        window.open(waURL, "_blank", "noopener");
+    });
+</script>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Brand and Description -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-brand" data-aos="fade-up">
+                        <div class="footer-logo">
+                            <a class="navbar-brand" href="./index.html">
+                                <img src="./img/say-wh.png" class="img-fluid logo-say w-100" alt="">
+                            </a>
+                        </div>
+                        <p>Your trusted spiritual travel companion, offering transformative journeys that connect you
+                            with
+                            divine energy and inner peace.</p>
+                    </div>
+                    <div class="social-links" data-aos="fade-up" data-aos-delay="300">
+                        <a href="https://www.facebook.com/share/1CUAoNiTTA/" class="bi bi-facebook"></a>
+                        <a href="https://youtube.com/@sivasakthiaanmeegayatra2.0?si=3GzN2MOanka4nNrA"
+                            class="bi bi-youtube"></a>
+                        <a href="https://www.instagram.com/sivasakthiaanmeega?igsh=MXVxeTFrZnR1cHBhMA=="
+                            class="bi bi-instagram"></a>
+                    </div>
+                </div>
+                <!-- Navigation Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title" data-aos="fade-up" data-aos-delay="100">Quick Links</h4>
+                    <ul class="footer-links" data-aos="fade-up" data-aos-delay="150">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./contact.html">Register</a></li>
+                    </ul>
+                </div>
+                <!-- Services List -->
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title" data-aos="fade-up" data-aos-delay="100">Services</h4>
+                    <ul class="footer-links" data-aos="fade-up" data-aos-delay="150">
+                        <li><a href="./services.html#service-1">குழந்தை பாக்கியம் பெற ஆன்மீக யாத்திரை</a></li>
+                        <li><a href="./services.html#service-2">திருமணத்தடை நீங்க ஆன்மீக யாத்திரை</a></li>
+                        <li><a href="./services.html#service-3">வெற்றிகள் கிடைக்க ஆன்மீக யாத்திரை</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-12">
+                    <h4 class="footer-title" data-aos="fade-up" data-aos-delay="200">Contact Us</h4>
+                    <div class="footer-contact" data-aos="fade-up" data-aos-delay="250">
+                        <div class="contact-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <p>sivasakthiaanmeegayatra2024@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <p>+91 94425 11961</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <p>Shop no 7, Ajees complex, Pazhaiyar road, Puthur Sirkali (tk), Mayiladuthurai (dt),
+                                609108</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sivasakthi Aanmeega Yatra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>

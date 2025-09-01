@@ -141,3 +141,66 @@ $('[data-fancybox="gallery"]').fancybox({
   loop: true,
   protect: true,
 });
+
+function applyTamilFont() {
+  if (document.cookie.indexOf("/en/ta") !== -1) {
+    document.body.style.fontFamily = '"Noto Serif Tamil", serif';
+  } else {
+    // reset to default font when not Tamil
+    document.body.style.fontFamily = "";
+  }
+}
+
+// Run once on load
+window.addEventListener("load", applyTamilFont);
+
+// Run every time DOM updates after translation
+document.addEventListener("DOMSubtreeModified", applyTamilFont);
+
+
+// Google Translate
+
+// (function () {
+//   var FROM = "en";
+//   var TO = "ta";
+
+//   // 1) Set the googtrans cookie BEFORE loading the translate script
+//   function setGoogTransCookie(from, to) {
+//     var val = "/" + from + "/" + to;
+//     // Path cookie (works on localhost too)
+//     document.cookie = "googtrans=" + val + ";path=/";
+//     // Domain cookie (helps on real domains & subdomains)
+//     var host = location.hostname.replace(/^www\./, "");
+//     document.cookie = "googtrans=" + val + ";domain=." + host + ";path=/";
+//   }
+//   setGoogTransCookie(FROM, TO);
+
+//   // 2) Initialize the widget
+//   window.googleTranslateElementInit = function () {
+//     new google.translate.TranslateElement(
+//       {
+//         pageLanguage: FROM,
+//         includedLanguages: "en,ta",
+//         layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+//         autoDisplay: false,
+//       },
+//       "google_translate_element"
+//     );
+//   };
+
+//   // 3) Fallback: if/when the dropdown appears, force-select Tamil
+//   function forceTamil() {
+//     var combo = document.querySelector(".goog-te-combo");
+//     if (combo && combo.value !== TO) {
+//       combo.value = TO;
+//       combo.dispatchEvent(new Event("change"));
+//       return;
+//     }
+//     // Keep trying briefly until Google renders the combo
+//     setTimeout(forceTamil, 400);
+//   }
+
+//   // Try after DOM ready & after full load
+//   document.addEventListener("DOMContentLoaded", forceTamil);
+//   window.addEventListener("load", forceTamil);
+// })();
